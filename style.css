@@ -1,0 +1,339 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: black;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+.banner {
+    color: whitesmoke;
+    flex-basis: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+.banner h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.banner p {
+    font-size: 15px;
+    font-size: 10px;
+}
+
+.banner-image {
+    flex-basis: 50%;
+    width: 100%;
+    height: auto;
+}
+
+.banner-image img {
+    vertical-align: bottom;
+}
+
+.watch-button {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+
+
+.fa-angle-right {
+    margin-left: 10px;
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    gap: 10px;
+    margin: 2rem auto;
+    margin-top: 100px;
+}
+
+.blog-botton {
+    /* display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    gap: 10px;
+    flex: 30%;
+    align-self: flex-start;
+    background-color: black;
+    text-align: center; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    gap: 10px;
+    flex: 30%;
+    align-self: flex-start;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.button {
+    width: 80%;
+    align-items: center;
+    margin: 5px auto;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    transition: .3s;
+    border: none;
+    outline: none;
+    /* width: 80%;
+    align-items: center;
+    margin: 5px auto;
+    background-color: rgb(207, 207, 207);
+    color: black;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    transition: .3s;
+    border: none;
+    outline: none; */
+
+}
+
+/* 
+.button:active {
+    background-color: red;
+    color: white;
+} */
+
+button:hover {
+    background-color: #2bcbba;
+}
+
+/* button.active {
+    background-color: red;
+    color: white;
+} */
+.bg-white {
+    background-color: rgb(207, 207, 207);
+    color: black;
+}
+
+.bg-red {
+    background-color: red;
+    color: white;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border-radius: 5px;
+    flex: 70%;
+}
+
+.blog-container .blog {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px gray;
+
+}
+
+.blog-container .blog img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-container .content {
+    padding: 10px;
+
+}
+
+.show-on-tab {
+    display: none;
+}
+
+/* .flags {
+    display: flex;
+    flex-direction: row;
+}
+
+.flags img {
+    width: 40px;
+    height: 40px;
+} */
+.thumbnail {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.flx {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.thumbContent {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.thumbContent h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.thumbContent p {
+    color: lightslategray;
+    font-size: 12px;
+}
+
+.footer {
+    background-color: hsl(0, 0%, 10%);
+    color: white;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+}
+
+ul li a,
+p a {
+    text-decoration: none;
+    color: white;
+}
+
+.fa-brands {
+    font-size: 25px;
+}
+
+@media screen and (max-width:576px) {
+    .background {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container,
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner h1 {
+        font-size: 20px;
+    }
+
+    .blog-botton {
+        margin: 0 auto;
+    }
+
+    footer ul {
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+
+@media screen and (min-width:577px) and (max-width:991px) {
+    .background {
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .blog-botton {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        border-radius: 5px;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .blog-botton .button {
+        font-size: 20px;
+        padding: 10px 12px;
+        width: auto;
+        margin: 0;
+    }
+
+    .blog-botton button.active {
+        background-color: rgb(145, 6, 6);
+    }
+
+    .blog-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner h1 {
+        font-size: 35px;
+    }
+
+    .banner,
+    .banner-image {
+        flex-basis: 50%;
+    }
+
+    .banner-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hide-on-tab {
+        display: none;
+    }
+
+    .show-on-tab {
+        display: block;
+        margin: 30px;
+        text-align: center;
+    }
+
+    footer ul {
+        flex-wrap: wrap;
+    }
+}
